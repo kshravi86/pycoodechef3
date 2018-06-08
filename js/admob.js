@@ -34,6 +34,15 @@ function initApp() {
         bgColor: 'black'
     } );
     
+    AdMob.createBanner( {
+        adId: admobid.banner, 
+        isTesting: false,
+        overlap: false, 
+        offsetTopBar: false, 
+        position: AdMob.AD_POSITION.TOP_CENTER,
+        bgColor: 'black'
+    } );
+	
     AdMob.prepareInterstitial({
         adId: admobid.interstitial,
         autoShow: true
